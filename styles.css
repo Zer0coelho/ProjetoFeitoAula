@@ -1,0 +1,154 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+  /* Cabeçalho */
+.header {
+    background-color: white;
+    color: #e60000;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 180px;
+}
+
+.header nav a {
+    color: rgb(0, 0, 0);
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.botao-header {
+    background-color: rgb(0, 0, 0);
+    color: #e60000;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.hero {
+    background-image: url('imagens/imagem-grande.jpg'); /* Imagem de fundo atualizada */
+    background-size: cover;
+    background-position: center;
+    color: #f9f9f9; /* Texto mais claro para contraste */
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.botao-principal {
+    display: inline-block;
+    background-color: #e60000;
+    color: #fff; /* Texto branco para contraste */
+    padding: 15px 25px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+  /* Seções */
+.secao {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.cinza {
+    background-color: #f0f0f0; /* Cor de fundo mais clara para contraste */
+}
+
+  /* Cards de atividades */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 15px 0;
+}
+
+.card p {
+    padding: 0 15px 20px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+  /* Depoimentos */
+.depoimento {
+    margin: 20px 0;
+}
+
+.depoimento p {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.depoimento span {
+    font-weight: bold;
+    color: #e60000;
+}
+
+  /* Rodapé */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Animação para botões */
+.botao-header, .botao-principal {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.botao-header:hover, .botao-principal:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.redes-sociais .icon {
+    width: 30px; /* Diminuir o tamanho dos ícones */
+    height: 30px;
+    margin: 0 10px;
+}
